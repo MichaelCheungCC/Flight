@@ -1,2 +1,5 @@
 /flight_data
+/flight_data_log
+*.log
+*.csv
 *.zip

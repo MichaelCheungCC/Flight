@@ -1,4 +1,10 @@
 [default]
+
+[path]
+log_path = "flight_data_log"
+log_name = "log_"
+csv_path = "flight_data"
+csv_name = "flight_data_"
  
 [web_scraping]
 SearchType = "ONEWAY"
