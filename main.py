@@ -121,7 +121,7 @@ with open(f"{csv_path}/{csv_name}.csv", mode='w', newline='') as file:
             except NoSuchElementException:
                 pass
             else:
-                logging.warn(f"{original_station} to {destination_station} on {process_date}: Sold out or not available.")
+                logging.warn(f"{original_station} to {destination_station} on {departure_date}: Sold out or not available.")
                 continue
            
             # start scraping
@@ -151,5 +151,5 @@ with open(f"{csv_path}/{csv_name}.csv", mode='w', newline='') as file:
                     flight_dict['process_datetime'] = datetime.now().replace(microsecond=0).isoformat()
                     writer.writerow(flight_dict)
         else:
-            logging.warning("Loading is incomplete.")
-            exit()
+            logging.warning(f"{original_station} to {destination_station} on {departure_date}: Loading is incomplete: {base_url}")
+            continue

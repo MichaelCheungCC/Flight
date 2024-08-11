@@ -5,13 +5,16 @@ log_path = "flight_data_log"
 log_name = "log_"
 csv_path = "flight_data"
 csv_name = "flight_data_"
- 
+
 [web_scraping]
 SearchType = "ONEWAY"
-OriginStation = "HKG"
-DestinationStation = "TYO"
+OriginStation = "TYO"
+DestinationStation = "HKG"
 Adults = 1
 Children = 0
 Infants = 0
 Currency = "HKD"
 DaysToScrape = 30
+
+[flight_api]
+lang = "en"

@@ -1,5 +1,8 @@
 /flight_data
 /flight_data_log
+/flight_schedule
+/lambda_layer
+
 *.log
 *.csv
 *.zip
